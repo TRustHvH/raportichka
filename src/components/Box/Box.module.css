@@ -1,0 +1,13 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #5b5b5b;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 0 100px 15px rgba(0, 0, 0, 0.2);
+}

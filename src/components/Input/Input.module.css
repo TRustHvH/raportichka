@@ -1,0 +1,23 @@
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-container label{
+    font-size: 16px;
+}
+
+.input-field{
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    padding: 6px;
+    background: transparent;
+    color: white;
+}
+
+.input-field::-ms-reveal{
+    filter: invert(100%);
+}
+
+

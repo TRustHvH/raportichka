@@ -1,0 +1,10 @@
+.button{
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}

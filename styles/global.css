@@ -1,0 +1,61 @@
+html, body {
+    min-width: 320px;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #e1e1e1;
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, label, span, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tip{
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.small{
+    display: flex;
+    flex-direction: row!important;
+    align-items: center;
+    gap: 15px!important;
+    border-bottom: 1px solid #adadad;
+    padding: 12px 0;
+}
+
+.small:first-child{
+    padding: 0 0 12px;
+}
+
+.small:last-child{
+    border: none;
+}
+
+.small input{
+    width: 25px;
+}
