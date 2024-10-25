@@ -4,4 +4,12 @@
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        justify-content: unset;
+    }
 }

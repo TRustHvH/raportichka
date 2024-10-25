@@ -3,7 +3,7 @@ import classNames from "classnames"
 
 import styles from "./Input.module.css"
 
-type TextInputType = "text" | "password"
+type TextInputType = "text" | "password" | "tel"
 
 interface TextInputProps {
     className?: string

@@ -1,10 +1,11 @@
-.input-container{
+.select-container{
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.input-field{
+
+.select-container select{
     border: 1px solid #adadad;
     border-radius: 8px;
     padding: 6px;
@@ -12,8 +13,6 @@
     color: white;
 }
 
-.input-field::-ms-reveal{
-    filter: invert(100%);
+.select-container option{
+    background: #5b5b5b;
 }
-
-

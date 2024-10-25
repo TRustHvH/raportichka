@@ -14,7 +14,7 @@ const IndexPage = () => {
     const [tip, setTip] = useState<undefined | string >(undefined)
 
     const onClick = () => {
-        if (code === "admin" && password === "admin") {
+        if (code === "111" && password === "admin") {
             router.push("/profile")
         }else{
             setTip("Неверный логин или пароль")
@@ -28,6 +28,7 @@ const IndexPage = () => {
                     <TextInput
                         id="input-code"
                         label="Код"
+                        type="tel"
                         value={code}
                         onChange={(e) => setCode(e.target.value)}
                     />
