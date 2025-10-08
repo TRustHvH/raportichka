@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ChangeEvent } from "react"
 import classNames from "classnames"
 
 import styles from "./Input.module.css"
@@ -16,8 +16,9 @@ interface TextInputProps {
     available?: boolean
     maxLength?: number,
     small?: boolean
+    disabled?: boolean
 
-    onChange?: React.ChangeEventHandler<HTMLInputElement>
+    onChange?: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
 export function TextInput(props: TextInputProps) {
@@ -31,6 +32,7 @@ export function TextInput(props: TextInputProps) {
         available = true,
         maxLength,
         small,
+        disabled,
 
         onChange,
     } = props
@@ -43,8 +45,9 @@ export function TextInput(props: TextInputProps) {
                    name={id}
                    onChange={onChange}
                    placeholder={placeholder}
-                   disabled={!available}
+                   disabled={!available || disabled}
                    maxLength={maxLength}
+                   value={props.value}
             />
         </div>
     )

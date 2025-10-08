@@ -11,5 +11,6 @@
 @media screen and (max-width: 600px){
     .container{
         justify-content: unset;
+        align-items: flex-end;
     }
 }

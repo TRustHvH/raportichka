@@ -1,8 +1,23 @@
 import React from "react"
 import styles from "./Button.module.css"
+import classNames from "classnames";
 
-export const Button = ({ children, onClick }: { children?: string, onClick?: () => void }) => {
+interface ButtonProps {
+    children?: string
+    onClick?: () => void
+    disabled?: boolean
+    className?: string
+}
+
+export const Button = ({ children, onClick, disabled, className }: ButtonProps) => {
     return (
-        <div className={styles.button} onClick={onClick}>{children}</div>
+        <button
+            className={classNames(styles.button, className)}
+            onClick={onClick}
+            disabled={disabled}
+
+        >
+            {children}
+        </button>
     )
 }
